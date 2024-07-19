@@ -6,17 +6,208 @@
     <title>Шпаргалка по Web</title>
     <meta name="description" content="Шпаргалка по Web">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- <link rel="icon" type="image/x-icon" href="img/favicon.ico"> -->
     <link href="style/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <h1 class="heading"></h1>
-        <div class="nav"></div>
-        <div class="useful-box">
+        <h1 class="heading">Моя web шпаргалка</h1>
+        <div class="nav">
+            <a href="#vscode" class="nav-item">Скачать VSCode</a>
+            <a href="#addons" class="nav-item">Расширения для VS Code</a>
+            <a href="#structure" class="nav-item">Готовая структура папки</a>
+            <a href="#null" class="nav-item">Обнуление</a>
+            <a href="#styles" class="nav-item">Служебные стили</a>
+            <a href="#responsive" class="nav-item">Адаптив</a>
+            <a href="#fonts" class="nav-item">Подключение шрифтов</a>
+            <a href="#scroll" class="nav-item">Плавынй скролл до элемента</a>
+        </div>
+        <div class="useful-box" id="vscode">
+            <h2 class="box-name">VS Code</h2>
+            <a href="" class="download">Скачать</a>
+        </div>
+        <div class="useful-box" id="addons">
+            <h2 class="box-name">Расширения для VS Code</h2>
+            <div class="wrapper">
+                <p class="addon">LiveServer</p>
+                <p class="addon">GitHub Pull Requests</p>
+                <p class="addon">Auto Rename Tag</p>
+                <p class="addon">HTML CSS Support</p>
+                <p class="addon">Prettier</p>
+                <p class="addon">Tabnine AI</p>
+                <p class="addon">CSS Peek</p>
+                <p class="addon">GraphQL</p>
+            </div>
+        </div>
+        <div class="useful-box" id="structure">
+            <h2 class="box-name">Готовая структура папки</h2>
+            <div class="type-box">
+                <h3 class="type">HTML + CSS + JS</h3>
+                <a href="" class="download">Скачать</a>
+            </div>
+            <div class="type-box">
+                <h3 class="type">HTML + SCSS + JS</h3>
+                <a href="" class="download">Скачать</a>
+            </div>
+        </div>
+        <div class="useful-box" id="null">
+            <h2 class="box-name">Обнуление</h2>
+            <div class="code">
+                <pre>
+                    <code>
+                        /***********ОБНУЛЕНИЕ************/
+                        *{
+                            padding: 0;
+                            margin: 0;
+                            border: 0;
+                        }
+                        *,*:before,*:after{
+                            -moz-box-sizing: border-box;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                        }
+                        :focus,:active{outline: none;}
+                        a:focus,a:active{outline: none;}
+
+                        nav,footer,header,aside{display: block;}
+
+                        html,body{
+                            height: 100%;
+                            width: 100%;
+                            font-size: 100%;
+                            line-height: 1;
+                            font-size: 14px;
+                            -ms-text-size-adjust: 100%;
+                            -moz-text-size-adjust: 100%;
+                            -webkit-text-size-adjust: 100%;
+                        }
+
+                        input,button,textarea{font-family:inherit;}
+
+                        input::-ms-clear{display: none;}
+                        button{cursor: pointer;}
+                        button::-moz-focus-inner {padding:0;border:0;}
+                        a, a:visited{text-decoration: none;}
+                        a:hover{text-decoration: none;}
+                        ul li{list-style: none;}
+                        img{vertical-align: top;}
+
+                        h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+                        /*************************/
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div class="useful-box" id="styles">
+            <h2 class="box-name">Служебные стили</h2>
+            <div class="code">
+                <pre>
+                    <code>
+                        /*******СЛУЖЕБНЫЕ СТИЛИ********/
+                        .fx {
+                            display: flex;
+                        }
+                        .jc-c {
+                            justify-content: center;
+                        }
+                        .fd-c {
+                            flex-direction: column;
+                        }
+                        .fd-r {
+                            flex-direction: row;
+                        }
+                        .ma {
+                            margin: 0 auto;
+                        }
+                        .ai-c {
+                            align-items: center;
+                        }
+                        .ta-c {
+                            text-align: center;
+                        }
+                        /***************/
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div class="useful-box" id="responsive">
+            <h2 class="box-name">Адаптив</h2>
+            <div class="code">
+                <pre>
+                    <code>
+                        /*********АДАПТИВ**********/
+                        /*1400px - 1200px*/
+                        @media screen and (max-width: 1400px) {
+                            
+                        }
+
+                        /*1200px - 992px*/
+                        @media screen and (max-width: 1200px) {
+                            
+                        }
+
+                        /*992px - 768px*/
+                        @media screen and (max-width: 992px) {
+
+                        }
+
+                        /*768px - 576px*/
+                        @media screen and (max-width: 768px) {
+
+                        }
+
+                        /*576px - 0px*/
+                        @media screen and (max-width: 576px) {
+                        
+                        }
+                        /**************************/
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div class="useful-box" id="fonts">
+            <h2 class="box-name">Подключение шрифтов</h2>
+            <div class="code">
+                <pre>
+                    <code>
+                        @font-face {
+                            font-family: "NAME";
+                            font-weight: 400;
+                            font-style: normal;
+                            src: url("fonts/NAME");
+                          }
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div class="useful-box" id="scroll">
+            <h2 class="box-name">Плавный скролл до якоря</h2>
+            <div class="code">
+                <pre>
+                    <code>
+                        //ПЛАВНЫЙ СКРОЛЛ ДО ЯКОРЯ
+                        // Найти все ссылки начинающиеся на #
+                        const anchors = document.querySelectorAll('a[href^="#"]')
+                        // Цикл по всем ссылкам
+                        for(let anchor of anchors) {
+                        anchor.addEventListener("click", function(e) {
+                            e.preventDefault() // Предотвратить стандартное поведение ссылок
+                            // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
+                            const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+                            // Плавная прокрутка до элемента с id = href у ссылки
+                            document.querySelector(goto).scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                            })
+                        })
+                        }
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div class="useful-box" id="doctype">
             <h2 class="box-name"></h2>
-            <div class="code-block"></div>
         </div>
     </div>
 </body>
